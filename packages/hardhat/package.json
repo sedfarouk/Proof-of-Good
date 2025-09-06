@@ -1,0 +1,53 @@
+{
+  "name": "@se-2/hardhat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "account": "hardhat account",
+    "account:import": "hardhat account:import",
+    "account:generate": "hardhat account:generate",
+    "account:reveal-pk": "hardhat account:reveal-pk",
+    "chain": "hardhat node --network hardhat --no-deploy",
+    "compile": "hardhat compile",
+    "deploy": "hardhat deploy",
+    "deploy:base-sepolia": "hardhat deploy --network base-sepolia",
+    "fork": "MAINNET_FORKING_ENABLED=true hardhat node --network hardhat --no-deploy",
+    "generate": "hardhat generate:account",
+    "hardhat-verify": "hardhat verify",
+    "lint": "eslint . --ext .ts,.js",
+    "lint-staged": "eslint . --ext .ts,.js",
+    "format": "prettier --write .",
+    "test": "hardhat test",
+    "verify": "hardhat etherscan-verify",
+    "flatten": "hardhat flatten",
+    "clean": "hardhat clean",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.7",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-verify": "^2.0.11",
+    "@openzeppelin/contracts": "^5.1.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/mocha": "^10.0.8",
+    "chai": "^6.0.1",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.15.0",
+    "hardhat": "^2.22.16",
+    "hardhat-deploy": "^0.12.4",
+    "hardhat-deploy-ethers": "^0.4.2",
+    "hardhat-gas-reporter": "^2.2.1",
+    "solidity-coverage": "^0.8.14",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/node": "^22.9.1",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  }
+}
